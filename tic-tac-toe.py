@@ -4,7 +4,7 @@ def print_board(board):
         print("-" * 5)
 
 def check_winner(board):
-    # Check rows, columns, and diagonals for a winner
+    # Check rows, columns, and diagonals to find the winner
     for i in range(3):
         if board[i][0] == board[i][1] == board[i][2] != " ":
             return board[i][0]
